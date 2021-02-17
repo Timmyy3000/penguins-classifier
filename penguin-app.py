@@ -5,9 +5,6 @@ import pickle
 from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 
-# get data
-titanic_raw = pd.read_csv('train.csv')[['Survived', 'Pclass', 'Age', 'Sex']]
-df = titanic_raw.head(5)
 
 
 image = Image.open('Penguin.jfif')
@@ -16,6 +13,8 @@ st.write("""
 # Penguin Specie Classifier App
 This app predicts the **Palmer Penguin** species!
 Data obtained from the [palmerpenguins library](https://github.com/allisonhorst/palmerpenguins) in R by Allison Horst.
+
+*Click [here](https://github.com/Timmyy3000/penguins-classifier/blob/main/penguin-app.py), to find my github repository for this project*
 
 The purpose of this ML Web App is to make a dynamic prediction of the species of a penguin based on its features:
 
@@ -27,9 +26,23 @@ The purpose of this ML Web App is to make a dynamic prediction of the species of
 - Sex
 
 
+### Sample Test Input
 
+Randomly selected rows from dataset
+
+*Hint : Input parameters from the table and compare results*
+""")
+
+data = pd.read_csv('penguins_cleaned.csv')
+
+st.write(data.sample(5))
+st.write("""
+
+Our Target Variable will be "Specie"
 
 """)
+
+
 
 st.sidebar.header('User Input Features')
 st.sidebar.markdown("""
