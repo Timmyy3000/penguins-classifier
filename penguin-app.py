@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 
 
-image = Image.open('penguin.jiff')
+image = Image.open('penguin.jfif')
 
 st.image(image, caption='Artwork by @allison_horst',use_column_width=True)
 
