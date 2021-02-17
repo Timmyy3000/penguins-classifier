@@ -3,14 +3,12 @@ import pandas as pd
 import numpy as np
 import pickle
 from sklearn.ensemble import RandomForestClassifier
-from PIL import Image
 
-
-
-image = Image.open('penguin.jfif')
+![Artwork by @allison_horst](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png "Artwork by @allison_horst")
+Artwork by @allison_horst
 
 st.write("""
-# Penguin Specie Classifier App
+# Penguin Species Classifier App
 This app predicts the **Palmer Penguin** species!
 Data obtained from the [palmerpenguins library](https://github.com/allisonhorst/palmerpenguins) in R by Allison Horst.
 
@@ -96,7 +94,7 @@ st.subheader('User Input features')
 if uploaded_file is not None:
     st.write(df)
 else:
-    st.write('Awaiting CSV file to be uploaded. Currently using example input parameters (shown below).')
+    st.write('Upload CSV file or Use sidebar input parameters)
     st.write(df)
 
 # Reads in saved classification model
@@ -105,7 +103,7 @@ load_clf = pickle.load(open('penguins_clf.pkl', 'rb'))
 # Apply model to make predictions
 
 
-st.subheader('Prediction')
+st.subheader('## Prediction')
 
 if st.button('Predict'):
     prediction = load_clf.predict(df)
