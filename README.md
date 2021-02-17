@@ -28,7 +28,7 @@ The purpose of this ML Web App is to make a dynamic prediction of the species of
 
 #### Live App
 
-The deployed web app is live at [here](https://share.streamlit.io/timmyy3000/penguins-clf-heroku/main/penguin-app.py)
+The deployed web app is live, [here](https://share.streamlit.io/timmyy3000/penguins-clf-heroku/main/penguin-app.py)
 
 
 ## Tools
