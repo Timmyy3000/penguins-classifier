@@ -7,7 +7,7 @@ from PIL import Image
 
 
 
-image = Image.open('Penguin.jfif')
+image = Image.open('penguin.jfif')
 
 st.write("""
 # Penguin Specie Classifier App
