@@ -12,7 +12,7 @@ st.write("""
 This app predicts the **Palmer Penguin** species!
 Data obtained from the [palmerpenguins library](https://github.com/allisonhorst/palmerpenguins) in R by Allison Horst.
 
-*Click [here](https://github.com/Timmyy3000/penguins-classifier/blob/main/penguin-app.py), to find my github repository for this project*
+*Click [here](https://github.com/Timmyy3000/penguins-classifier), to find my github repository for this project*
 
 The purpose of this ML Web App is to make a dynamic prediction of the species of a penguin based on its features:
 
