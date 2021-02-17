@@ -4,10 +4,13 @@ import numpy as np
 import pickle
 from sklearn.ensemble import RandomForestClassifier
 
+
+
+st.write("""
+
 ![Artwork by @allison_horst](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png "Artwork by @allison_horst")
 Artwork by @allison_horst
 
-st.write("""
 # Penguin Species Classifier App
 This app predicts the **Palmer Penguin** species!
 Data obtained from the [palmerpenguins library](https://github.com/allisonhorst/palmerpenguins) in R by Allison Horst.
