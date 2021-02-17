@@ -3,13 +3,18 @@ import pandas as pd
 import numpy as np
 import pickle
 from sklearn.ensemble import RandomForestClassifier
+from PIL import Image
+
+
+image = Image.open('penguin.jiff')
+
+st.image(image, caption='Artwork by @allison_horst',use_column_width=True)
 
 
 
 st.write("""
 
-![Artwork by @allison_horst](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png "Artwork by @allison_horst")
-Artwork by @allison_horst
+rst
 
 # Penguin Species Classifier App
 This app predicts the **Palmer Penguin** species!
@@ -105,7 +110,7 @@ load_clf = pickle.load(open('penguins_clf.pkl', 'rb'))
 # Apply model to make predictions
 
 
-st.subheader('## Prediction')
+st.write('## Prediction')
 
 if st.button('Predict'):
     prediction = load_clf.predict(df)
