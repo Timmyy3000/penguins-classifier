@@ -14,7 +14,6 @@ st.image(image, caption='Artwork by @allison_horst',use_column_width=True)
 
 st.write("""
 
-rst
 
 # Penguin Species Classifier App
 This app predicts the **Palmer Penguin** species!
